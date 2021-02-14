@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  
+
+    <script type="text/javascript">
+     
+       var num1 = parseInt (prompt("Please enter first number:" ,"0"));
+       if(!num1){
+           alert('Invalid Input');
+           next=false;
+           location.reload()
+           
+       }else{
+           next=true;
+       }
+       
+         if(next ==true){
+
+            var operator = prompt("OPERATOR:");
+            if(operator=='+' || operator=='-'|| operator=='*'|| operator=='/'){
+                var num2 = parseInt (prompt("Please enter Second number:","0"));
+                   if(!num2){
+                    alert('Invalid Input');
+                    next=false;
+                    location.reload()
+                   }else{
+                       function Calculate(num1, num2, operator) {
+
+                        switch (operator) {
+
+                         case '+':
+                         alert( num1 + num2);
+                         break;
+                         case '-':
+                         alert( num1 - num2);
+                         break;
+                         case '*':
+                         alert( num1 * num2);
+                         break;
+                         case '/':
+                         alert( num1 / num2);
+                         break; 
+                        }
+
+                 }Calculate(num1, num2, operator);
+
+
+                   }
+                   }
+
+                else{
+                   alert("Invalid Operator")
+                   location.reload()
+                   } 
+
+                  
+            
+            }  location.reload() 
+            
+           
+            
+
+             
+           
+             
+                   
+       
+      
+      
+          
+      
+ 
+
+
+       
+    </script>
+</head>
+<body>
+       
+</body>
+</html>

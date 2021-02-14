@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        function intouch() {
+            var boldtext, i;
+            //create a Javascript program which highlights the bold words of the
+            // following paragraph, on mouse over a certain button.
+
+            boldtext = document.querySelectorAll(".example");
+            for (i = 0; i < boldtext.length; i++) {
+                boldtext[i].style.backgroundColor = "pink";
+            }
+
+            //GETTING THE LENGTH OF BY EACH:
+            //var x = document.getElementById("ses");
+            //alert(x.innerText.length);
+
+        }
+        function outtouch() {
+
+
+            boldtext = document.querySelectorAll(".example");
+            for (i = 0; i < boldtext.length; i++) {
+                boldtext[i].style.backgroundColor = "white";
+            }
+
+
+        }
+
+        // Write a JavaScript program that will count the number of images in a said page.
+
+        function imgclick() {
+            var imagelist = document.getElementsByTagName("img").length;
+            alert(imagelist);
+
+        }
+
+
+        // Write a JavaScript program that disables a certain button when another button is clicked.
+        function jamesclick() {
+            alert("I always want to entertain people and make them laugh!")
+            var james = document.getElementById("james").src = "https://thumbs.gfycat.com/ColdAgedKookaburra-max-1mb.gif";
+
+        }
+
+        function removeButton() {
+            document.getElementById("btn").disabled = true;
+            document.getElementById("btn1").disabled = true;
+            document.getElementById("btn2").disabled = true;
+        }
+
+    </script>
+
+    <center>
+        <div class="container" style="background-color: black;">
+            <br>
+            <img class="img" src="https://i.ytimg.com/vi/Hy5GgsSHn-w/maxresdefault.jpg" width="30%" height="30%" style="filter: blur(8px);
+        -webkit-filter: blur(8px);">
+            <img class="img" id="james" src="Zigm.jpg" width="30%" height="30%">
+            <img class="img" src="https://i.ytimg.com/vi/7uDZH-fFmfU/maxresdefault.jpg" width="30%" height="30%" style="filter: blur(8px);
+        -webkit-filter: blur(8px);">
+        </div>
+    </center>
+
+    <style>
+        body {
+            background: linear-gradient(to bottom left, #ff9933 16%, #ff3300 101%);
+            color: black;
+            font-family: "Trirong", serif;
+
+        }
+
+        div {
+            border: 1px solid gray;
+            padding: 8px;
+        }
+
+        p {
+            text-indent: -29px;
+            text-align: justify;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        @keyframes blinkcolor {
+            30% {
+                color: #df4a48;
+            }
+
+            70% {
+                color: #284454;
+            }
+
+            100% {
+                color: #389c15;
+            }
+        }
+
+        @keyframes moveleft {
+            0% {
+                transform: translate(0px);
+            }
+
+            50% {
+                transform: translate(20px);
+            }
+
+            100% {
+                transform: translate(0px);
+            }
+        }
+
+        @keyframes moveright {
+            0% {
+                transform: translate(0px);
+            }
+
+            50% {
+                transform: translate(-20px);
+            }
+
+            100% {
+                transform: translate(0px);
+            }
+        }
+
+        .theme-details .we-install {
+            font-size: 17px;
+        }
+
+        .we-install {
+            text-align: center;
+
+        }
+
+        .we-install a {
+            color: #df4a48;
+
+            padding: 5px;
+            text-decoration: none;
+            position: relative;
+            animation-name: blinkcolor;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+
+        .we-install a:hover {
+            animation-play-state: paused;
+        }
+
+        .we-install a:before {
+            content: "\f004";
+            font-family: fontawesome;
+            position: absolute;
+            left: -1%;
+            animation-name: moveleft;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+
+        .we-install a:after {
+            content: "\f004";
+            font-family: fontawesome;
+            text-align: center;
+            position: absolute;
+            right: -1%;
+            top: 12%;
+            animation-name: moveright;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+
+        /*  IF I WILL RELATE MY LIFE INTO LYRICS.*/
+        .theme-details .we-install1 {
+            font-size: 17px;
+        }
+
+        .we-install1 {
+            text-align: center;
+
+        }
+
+        .we-install1 a {
+            color: #df4a48;
+
+            padding: 5px;
+            text-decoration: none;
+            position: relative;
+            animation-name: blinkcolor;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+
+        .we-install1 a:hover {
+            animation-play-state: paused;
+        }
+
+        .we-install1 a:before {
+            content: "\f001";
+            font-family: fontawesome;
+            position: absolute;
+            left: -1%;
+            animation-name: moveleft;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+
+        .we-install1 a:after {
+            content: "\f001";
+            font-family: fontawesome;
+            text-align: center;
+            position: absolute;
+            right: -7%;
+            top: 16%;
+            animation-name: moveright;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+    </style>
+    <!-- Create a HTML file with a paragraph not less than 400 words which provide a
+             outline and preview of your current college life. Make sure you highlight
+              some important terms in bold. Then, create a Javascript program which highlights
+               the bold words of the following paragraph, on mouse over a certain button. -->
+
+    <center>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div class="container" style="background-color: white;">
+                <center>
+                    <p class="we-install" style="background-color: white;"> <a>" Where there's a will, there's a way, kind of beautiful
+                            And every night has its day, <br>
+                            so magical
+                            And if there's love in this life, there's no obstacle
+                            That can't be defeated"</a></p>
+                </center>
+
+                Oooopsss let me introduce first myself!, by the way my name is<b class="example"> John Miguel Paz
+                    Estopa<br> 20 years old
+                    from Dalaguete Cebu City. I was one of PN Scholar batch(2021)</b> and currently
+                studying in <b class="example">University of San Carlos taking the course of (CCT) Certificate in
+                    Computer Technology.</b>
+                Hobbies are Playing Guitar
+                listening to music , singing in the bathroom and lastly <b class="example">I always pray before I sleep
+                    at night.</b><br>
+                <div class="w3-container">
+                    <br>College life is known as one of the most memorable years of one's life.
+                    It is entirely different from school life ,since
+                    in that stage , we need to focus and think critically inorder for us to rise up.
+
+                    College life exposes us to new experiences and things that we were not familiar with earlier.
+                    For some people, college life means enjoying life to the fullest and partying hard.
+
+                    College life is one of the most interesting part in our lives,
+                    When I was in my first year college it was quite fun and full of memories,
+                    without PN I can't proceed to college since my family can't afford even if the tuition is free.<br>
+
+                    <br> <b class="example">I am so thankful to god</b> on what I have now even if im still in college ,
+                    I am not yet working
+                    but, for me,
+                    it has a big impact on my family. One of the thing that I can consider as a <b
+                        class="example">Unforgettable experience
+                        in my College life
+                        was when entering the pretigious university which is the University of San Carlos.</b> Also
+                    meeting
+                    other college students was
+                    not easy on me since its new to me , And now in my current college life it wasn't easy for me to
+                    adjust because now we are facing a
+                    pandemic , face to face class is not allowed, I need to adapt and develop more my communication
+                    skills since we need it in our Online class
+                    in the other hand , I am still thankful to god , to PN infact that even if we are in this pandemic
+                    situation, we still continue on studying
+                    and hopefully soon we can graduate and get some job particularly on programming.
+                    <br>
+                    <br>
+                    <p class="we-install1"> <a>If I will relate my life into lyrics.</p>
+                    <b class="example">Monday</b> left me broken
+                    <b class="example">Tuesday</b>, I was through with hoping
+                    <b class="example">Wednesday</b>, my empty arms were open
+                    <b class="example">Thursday</b>, waiting for love, waiting for love
+                    Thank the stars it's <b class="example">Friday</b>
+                    I'm burning like a fire gone wild on <b class="example">Saturday</b>
+                    Guess I won't be coming to church on <b class="example">Sunday</b>
+                    I'll be waiting for love, waiting for love .
+                    </p>
+
+                </div>
+            </div>
+            <button id="btn" type="button" onmouseover="intouch()" onmouseout="outtouch()">Important Lines</button>
+            <button id="btn1" onclick="imgclick()">How many Images?</button>
+            <button id="btn2" type="button" onclick="jamesclick()">Don't Click this!</button>
+
+            <button onclick="removeButton()">Disable all button</button>
+    </center>
+    </div>
+    <p id="demo"></p>
+
+</body>
+
+</html>

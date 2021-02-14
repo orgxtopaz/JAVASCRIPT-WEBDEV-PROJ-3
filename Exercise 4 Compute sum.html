@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Write a JavaScript program that computes the sum of two integers.
+             If the two values are the same, return triple of their sum. -->
+
+
+    <script type="text/javascript">
+     var num1= parseInt(prompt("Enter first number: "))
+
+     if(!num1){
+         alert("Invalid input try again lods!")
+         location.reload();
+     }else{
+         
+          var num2= parseInt(prompt("Enter Second number: "))
+          if(!num2){
+              alert("Invalid input try again lods!")
+              location.reload();
+          }else{
+              if(num1!=num2){
+                  alert(num1+num2);
+              }else{
+                  var multiply =(num1+num2);
+                  alert (eval(multiply*3));
+              }
+          }
+     }
+
+    
+    
+    </script>         
+
+</body>
+</html>

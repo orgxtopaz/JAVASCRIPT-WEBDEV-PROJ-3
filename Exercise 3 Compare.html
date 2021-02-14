@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Write a JavaScript program that compares 2 numbers.
+         Display the larger number in a prompt window. 
+         If both numbers are equal, display the number plus 1 in a prompt window.  -->
+  <script type="text/javascript">
+
+   var num1 =parseInt(prompt("Enter first number: ")); 
+   if(!num1){
+       alert("Invalid Input! Try Again");
+       location.reload();
+   }else{
+       var next =true;
+   }
+        if (next==true){
+            var num2 =parseInt(prompt("Enter Second number: ")); 
+            if(!num2){
+                alert("Invalid Input! Try Again");
+                location.reload(); 
+            }else{
+                    if(num1>num2){
+                       alert(num1);
+                    }else if(num1==num2){
+                          var plus =num1+1;
+                             alert(plus);
+                   }
+                     else if(num1<num2){
+                         alert(num2);
+   }
+
+            }
+
+        }
+
+
+
+
+  
+
+  </script>
+
+</body>
+</html>

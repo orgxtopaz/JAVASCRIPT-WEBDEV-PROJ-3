@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a Javascript program to show the day today, 
+        and calculate how many days are left until the next Sunday. 
+        Write the result in HTML page. -->
+<script type="text/javascript">
+
+
+var today = new Date();  
+var day = today.getDay();  
+var daylist = [ "Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];  
+
+//alert(daylist.length); //COMPUTING THE LENGTH IN THE ARRAY
+var gap=(7-day);
+alert("Today is : " + daylist[day] + ".");  
+alert("There are :"+gap+ " Days before sunday");
+
+
+</script>
+
+
+</body>
+</html>
